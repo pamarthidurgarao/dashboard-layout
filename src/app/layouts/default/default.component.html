@@ -1,0 +1,10 @@
+<app-header (openMenu)="toggleMenu($event)">Head</app-header>
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" [opened]="sidebarOpened">
+        <app-sidenav>sidebar</app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
+<app-footer>Foot</app-footer>
